@@ -152,7 +152,7 @@ const Footer = ({ location, title }) => {
 
                   <img
                     alt="SF Health Network"
-                    src="https://zuckerbergsanfranciscogeneral.org/wp-content/themes/zsfg-2017/assets/images/sfhn-brand-logo-heart-only-white-sized.png"
+                    src="/sfhn-brand-logo-heart-only-white-sized.png"
                   />
                 </div>
                 <div className="footer__end">
@@ -172,7 +172,7 @@ const Footer = ({ location, title }) => {
             <div className="small-12 columns">
               <img
                 className="brand-logo"
-                src="https://zuckerbergsanfranciscogeneral.org/wp-content/themes/zsfg-2017/assets/images/brand-logo.png"
+                src="/brand-logo.png"
                 alt=""
                 title=""
               />

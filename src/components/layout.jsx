@@ -25,9 +25,11 @@ const Layout = ({ children, location, title }) => {
   const siteTitle = site.siteMetadata.title;
   const pageTitle = title || siteTitle;
 
-  // useEffect(() => {
-  //   Global.get('jQuery')(Global.get('document')).foundation();
-  // });
+  useEffect(() => {
+    document.onload = () => {
+      document.jQuery(document).foundation();
+    };
+  });
 
   return (
     <>

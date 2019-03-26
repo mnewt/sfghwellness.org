@@ -50,15 +50,10 @@ const Header = ({ location, title }) => {
         <div id="primary" className="title-bar site-bar">
           <div className="row align-middle">
             <div className="title-bar-title">
-              <a href="/">
-                <img
-                  src="https://zuckerbergsanfranciscogeneral.org/wp-content/themes/zsfg-2017/assets/images/logo-zsfg.png"
-                  alt="Zuckerberg San Francisco General"
-                />
-              </a>
-              {/* <Link to="/"> */}
-              {/*   <Img fluid={logo.childImageSharp.fluid} alt={pageTitle} /> */}
-              {/* </Link> */}
+              <Link to="/">
+                <img src="/logo-zsfg.png" alt={pageTitle} />
+                {/* <Img fluid={logo.childImageSharp.fluid} alt={pageTitle} /> */}
+              </Link>
             </div>
             <div className="title-bar-right hide-for-large">
               <button

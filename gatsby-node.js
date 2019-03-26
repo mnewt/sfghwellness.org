@@ -57,3 +57,18 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     });
   }
 };
+
+exports.onCreateWebpackConfig = ({ actions, stage }) => {
+  const { setWebpackConfig } = actions;
+  const PRODUCTION = stage !== `develop`;
+
+  if (!PRODUCTION) {
+    setWebpackConfig({
+      resolve: {
+        alias: {
+          'react-dom': '@hot-loader/react-dom',
+        },
+      },
+    });
+  }
+};
