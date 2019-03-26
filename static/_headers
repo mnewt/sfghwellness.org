@@ -1,5 +1,3 @@
 /*
-  X-Frame-Options: DENY
   X-XSS-Protection: 1; mode=block
   Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
-  Content-Security-Policy: default-src 'self' https://player.vimeo.com; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; connect-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; manifest-src 'self'; prefetch-src 'self';
