@@ -70,7 +70,13 @@ const SEO = ({ description, lang, meta, keywords, title }) => {
             : []
         )
         .concat(meta)}
-    />
+    >
+      <link
+        rel="prefetch"
+        href="https://zuckerbergsanfranciscogeneral.org/patient-visitor-resources/community-wellness-center/"
+      />
+      <link rel="prefetch" href="https://zuckerbergsanfranciscogeneral.org/" />{' '}
+    </Helmet>
   );
 };
 

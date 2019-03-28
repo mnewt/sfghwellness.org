@@ -6,8 +6,26 @@ import SEO from '../components/seo';
 const NotFoundPage = () => (
   <Layout>
     <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist. Sorry about that..</p>
+    <h1>Oops! That page canʼt be found</h1>
+    <p>It looks like nothing was found at this location. Maybe try a search?</p>
+    <form
+      role="search"
+      method="get"
+      className="search-form"
+      action="https://zuckerbergsanfranciscogeneral.org/"
+    >
+      <label>
+        <span className="screen-reader-text">Search for:</span>
+        <input
+          type="search"
+          className="search-field"
+          placeholder="Search …"
+          value=""
+          name="s"
+        />
+      </label>
+      <input type="submit" className="search-submit" value="Search" />
+    </form>
   </Layout>
 );
 

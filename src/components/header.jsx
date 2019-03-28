@@ -1,24 +1,11 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { graphql, Link, useStaticQuery } from 'gatsby';
-import Img from 'gatsby-image';
-
-import styles from './header.module.css';
 
 const Header = ({ location, title }) => {
-  const { allMarkdownRemark, logo, site } = useStaticQuery(
+  const { allMarkdownRemark, site } = useStaticQuery(
     graphql`
-      fragment fluidImage on File {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
       query HeaderQuery {
-        logo: file(relativePath: { eq: "logo-zsfg.png" }) {
-          ...fluidImage
-        }
         site {
           siteMetadata {
             title
@@ -31,8 +18,10 @@ const Header = ({ location, title }) => {
           edges {
             node {
               id
+              fields {
+                slug
+              }
               frontmatter {
-                path
                 title
               }
             }
@@ -46,6 +35,9 @@ const Header = ({ location, title }) => {
 
   return (
     <div className="off-canvas-content">
+      <a aria-label="Telephone Number" href="tel:628 206 8000">
+        {' '}
+      </a>
       <header id="header">
         <div id="primary" className="title-bar site-bar">
           <div className="row align-middle">
@@ -98,10 +90,12 @@ const Header = ({ location, title }) => {
                   id="menu-header-menu-1"
                   className="dropdown menu"
                   data-dropdown-menu
+                  role="menubar"
                 >
                   <li
                     className="icon icon-home current-menu-item current_page_item menu-item menu-item-main-menu menu-item-home"
                     data-description=""
+                    role="menuitem"
                   >
                     <a
                       href="https://zuckerbergsanfranciscogeneral.org/"
@@ -110,21 +104,15 @@ const Header = ({ location, title }) => {
                       Home
                     </a>
                   </li>
-                  <li
-                    className="menu-item menu-item-main-menu"
-                    data-description=""
-                  >
-                    <a
-                      href="https://zuckerbergsanfranciscogeneral.org/contact-us/"
-                      className="menu-link sub-menu-link"
-                    >
-                      Contact
-                    </a>
-                  </li>
                   {pages.map(page => {
-                    const { path, title } = page.node.frontmatter;
+                    const { title } = page.node.frontmatter;
+                    const path = page.node.fields.slug;
+                    var c = 'menu-item menu-item-main-menu';
+                    if (location && path === location.pathname)
+                      c = 'page-patient-visitor-resources current ' + c;
+
                     return (
-                      <li key={path} className="menu-item menu-item-main-menu">
+                      <li key={path} className={c} role="menuitem">
                         <Link to={path} className="menu-link sub-menu-link">
                           {title}
                         </Link>

@@ -1,4 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+sans');
 
-@import "./zsfg.css"
+@import "./zsfg.css";
 
+.page-image-wrapper {
+  lost-column: 1/2;
+  width: 300px;
+}
+
+.sidebar-image-container {
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.sidebar-image-wrapper {
+  margin-top: 2em;
+}

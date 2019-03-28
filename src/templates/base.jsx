@@ -9,11 +9,18 @@ import './base.module.css';
 
 const BaseTemplate = ({ data, location }) => {
   const page = data.markdownRemark;
-  const title = page.frontmatter.title || data.site.siteMetadata.siteTitle;
   const { keywords } = data.site.siteMetadata;
+  const title = page.frontmatter.title || data.site.siteMetadata.title;
+  const { pageEvents, sidebarEvents, images } = page.frontmatter;
 
   return (
-    <Layout location={location} title={title}>
+    <Layout
+      pageEvents={pageEvents}
+      sidebarEvents={sidebarEvents}
+      images={images}
+      location={location}
+      title={title}
+    >
       <SEO title={title} description={page.excerpt} keywords={keywords} />
       <div dangerouslySetInnerHTML={{ __html: page.html }} />
     </Layout>
@@ -26,6 +33,16 @@ BaseTemplate.propTypes = {
 };
 
 export default BaseTemplate;
+
+export const fluidImage = graphql`
+  fragment fluidImage on File {
+    childImageSharp {
+      fluid(quality: 60, maxWidth: 2000) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+`;
 
 export const pageQuery = graphql`
   query PageBySlugAndPages($slug: String!) {
@@ -42,9 +59,73 @@ export const pageQuery = graphql`
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
-        path
         title
         weight
+        background
+        pageEvents {
+          title
+          description
+          sections {
+            title
+            subsections {
+              title
+              description
+            }
+          }
+        }
+        sidebarEvents {
+          title
+          description
+          sections {
+            title
+            description
+          }
+        }
+        images {
+          relativePath
+          childImageSharp {
+            id
+            fixed {
+              base64
+              tracedSVG
+              aspectRatio
+              width
+              height
+              src
+              srcSet
+              srcWebp
+              srcSetWebp
+              originalName
+            }
+            original {
+              width
+              height
+              src
+            }
+            resize {
+              src
+              tracedSVG
+              width
+              height
+              aspectRatio
+              originalName
+            }
+            fluid {
+              base64
+              tracedSVG
+              aspectRatio
+              src
+              srcSet
+              srcWebp
+              srcSetWebp
+              sizes
+              originalImg
+              originalName
+              presentationWidth
+              presentationHeight
+            }
+          }
+        }
       }
     }
   }

@@ -48,7 +48,6 @@
               ($menu = jQuery('[data-description]')),
               new Menu().setupMenu($menu),
               new Load().setupLoading(),
-              new Map().setupMaps('#big-map, #footer-map'),
               jQuery(document).ready(function($) {
                 $('a')
                   .filter('[href^="http"], [href^="//"]')

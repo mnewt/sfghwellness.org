@@ -1,7 +1,6 @@
 ---
 date: 2019-03-25
 title: Initiatives & Programs
-path: /initiatives/
 weight: 3
 ---
 
