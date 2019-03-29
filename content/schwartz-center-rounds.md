@@ -3,7 +3,7 @@ date: 2019-03-25
 title: Schwartz Center Rounds
 weight: 5
 images:
-  - ../../src/images/schwartz-center-rounds1.jpg
+  - "../static/media/schwartz-center-rounds1.jpg"
 sidebarEvents:
   title: Schedule
   description: Schwartz Center Rounds

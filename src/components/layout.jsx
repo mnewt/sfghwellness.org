@@ -15,21 +15,7 @@ import Sidebar from './sidebar';
 import './layout.css';
 
 const initFoundation = () => {
-  // if (
-  //   typeof jQuery !== 'undefined' &&
-  //   typeof Foundation !== 'undefined' &&
-  //   typeof Foundation.DropdownMenu !== 'undefined'
-  // ) {
-  //   // Tell foundation to initialize only after React has rendered the DOM and
-  //   // jQuery and Foundation have been loaded.
-  //   jQuery(document).foundation();
-  //   console.log('initialized foundation.');
-  // } else {
-  //   setTimeout(initFoundation, 10);
-  // }
-
   require('foundation-sites');
-
   jQuery(document).foundation();
 };
 

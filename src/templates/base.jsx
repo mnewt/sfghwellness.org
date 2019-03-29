@@ -61,7 +61,74 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         weight
-        background
+        background {
+          internal {
+            content
+            contentDigest
+            description
+            mediaType
+            type
+          }
+          sourceInstanceName
+          absolutePath
+          relativePath
+          extension
+          size
+          prettySize
+          modifiedTime
+          accessTime
+          changeTime
+          birthTime
+          root
+          dir
+          base
+          ext
+          name
+          relativeDirectory
+          publicURL
+          childImageSharp {
+            id
+            fixed {
+              base64
+              tracedSVG
+              aspectRatio
+              width
+              height
+              src
+              srcSet
+              srcWebp
+              srcSetWebp
+              originalName
+            }
+            original {
+              width
+              height
+              src
+            }
+            resize {
+              src
+              tracedSVG
+              width
+              height
+              aspectRatio
+              originalName
+            }
+            fluid {
+              base64
+              tracedSVG
+              aspectRatio
+              src
+              srcSet
+              srcWebp
+              srcSetWebp
+              sizes
+              originalImg
+              originalName
+              presentationWidth
+              presentationHeight
+            }
+          }
+        }
         pageEvents {
           title
           description

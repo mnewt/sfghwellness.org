@@ -12,7 +12,7 @@ const Header = ({ location, title }) => {
           }
         }
         allMarkdownRemark(
-          filter: { fileAbsolutePath: { regex: "/pages/" } }
+          filter: { fileAbsolutePath: { regex: "/content/" } }
           sort: { order: ASC, fields: [frontmatter___weight] }
         ) {
           edges {
@@ -33,8 +33,8 @@ const Header = ({ location, title }) => {
   const pages = allMarkdownRemark.edges;
 
   return (
-    <div className="off-canvas-content">
-      <a aria-label="Telephone Number" href="tel:628 206 8000">
+    <div className="off-canvas-content" data-off-canvas-content>
+      <a aria-label="Telephone Number" href="tel:6282068000">
         {' '}
       </a>
       <header id="header">
@@ -42,7 +42,7 @@ const Header = ({ location, title }) => {
           <div className="row align-middle">
             <div className="title-bar-title">
               <Link to="/">
-                <img src="/images/logo-zsfg.png" alt={pageTitle} />
+                <img src="/media/logo-zsfg.png" alt={pageTitle} />
                 {/* <Img fluid={logo.childImageSharp.fluid} alt={pageTitle} /> */}
               </Link>
             </div>

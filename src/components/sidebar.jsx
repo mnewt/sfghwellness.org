@@ -117,7 +117,7 @@ const Contact = () => (
     <div
       className="img_4_3"
       style={{
-        background: 'url(/images/BLG-5_Location-300x188.jpg) no-repeat',
+        background: 'url(/media/BLG-5_Location-300x188.jpg) no-repeat',
       }}
       role="img"
       aria-label="Building 5"

@@ -1,7 +1,7 @@
 ---
 title: C.A.R.E.
 images:
-  - ../../src/images/CARE-Logo.jpg
+  - "../static/media/CARE-Logo.jpg"
 weight: 6
 sidebarEvents:
   title: Group Schedules

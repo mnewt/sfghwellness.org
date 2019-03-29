@@ -26,7 +26,7 @@ const Footer = () => (
                   >
                     <a href="https://www.google.com/maps/place/Zuckerberg+San+Francisco+General+Hospital/@37.7556605,-122.4072486,17z/data=!3m1!4b1!4m5!3m4!1s0x808f7e4bb2d3d61b:0xc7e327c61cf31c06!8m2!3d37.7556563!4d-122.4050599?hl=en">
                       <img
-                        src="/images/map.static.png"
+                        src="/media/map.static.png"
                         style={{
                           maxWidth: '100%',
                           display: 'block',
@@ -116,7 +116,7 @@ const Footer = () => (
 
                 <img
                   alt="SF Health Network"
-                  src="/images/sfhn-brand-logo-heart-only-white-sized.png"
+                  src="/media/sfhn-brand-logo-heart-only-white-sized.png"
                 />
               </div>
               <div className="footer__end">
@@ -136,7 +136,7 @@ const Footer = () => (
           <div className="small-12 columns">
             <img
               className="brand-logo"
-              src="/images/brand-logo.png"
+              src="/media/brand-logo.png"
               alt=""
               title=""
             />

@@ -2,20 +2,20 @@ backend:
   name: git-gateway
   branch: master
 
-media_folder: "static/uploads"
-public_folder: "/uploads"
+media_folder: "src/media"
+public_folder: "/media"
 
 collections:
   - name: "page"
     label: "Page"
-    folder: "content/pages"
+    folder: "content"
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Date", name: "date", widget: "hidden", default: "page"}
+      - {label: "Collection", name: "collection", widget: "hidden", default: "page"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Update Date", name: "date", widget: "datetime"}
-      - {label: "Menu Precedence", name: "weight", widget: "number"}
+      - {label: "Updated", name: "date", widget: "date"}
+      - {label: "Menu Order", name: "weight", widget: "number"}
       - {label: "Background Image", name: "background", widget: "file", allow_multiple: false}
 
       - {label: "Sidebar Images", name: "images", widget: file, media_library: {config: {multiple: true}}}

@@ -2,7 +2,7 @@
 date: 2019-03-25
 title: About
 weight: 1
-background: src/images/GardenMural_Header-1920x710.jpg
+background: "../static/media/GardenMural_Header-1920x710.jpg"
 ---
 
 ## Our Mission & Vision

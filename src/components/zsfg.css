@@ -4194,7 +4194,7 @@ Checklist Module
   margin: 5px 5px 0px 0px !important; }
 .module__checklist li:before {
   content: "";
-  /* background: url(../../assets/images/icon-checklist.png) no-repeat; */
+  background: url(../../static/media/icon-checklist.png) no-repeat;
   background-size: cover;
   margin-right: 10px;
   display: inline-block !important;
@@ -4339,7 +4339,7 @@ M19
   content: "";
   display: block;
   position: absolute;
-  /* background: url(../../assets/images/timeline-dot.png) no-repeat; */
+  background: url(../../static/media/timeline-dot.png) no-repeat;
   background-size: cover;
   width: 10px;
   height: 15px;

@@ -7,7 +7,7 @@ const MobileMenu = ({ location }) => {
     graphql`
       query {
         allMarkdownRemark(
-          filter: { fileAbsolutePath: { regex: "/pages/" } }
+          filter: { fileAbsolutePath: { regex: "/content/" } }
           sort: { order: ASC, fields: [frontmatter___weight] }
         ) {
           edges {
