@@ -30,9 +30,3 @@ We encourage community building and provide opportunities for participants to pr
 ### HOLISTIC APPROACH
 
 The Community Wellness Program offers opportunities for participants to enhance health and well-being through healing movement classes, healthy cooking demonstrations, relaxation strategies, caregiver support, and much more.  Through our cadre of experienced wellness instructors, we offer a wide variety of fun and engaging classes.  Please see our calendar of events for a current schedule of wellness classes and other activities. All the programs and services we offer are open to all and free of charge.
-
-### YEARLY REPORT
-
-The Community Wellness Program provides  bi-annual reports outlining it’s six month findings and successes.
-
-NO REPORT LINK?

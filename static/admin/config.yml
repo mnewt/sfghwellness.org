@@ -2,57 +2,62 @@ backend:
   name: git-gateway
   branch: master
 
-media_folder: "src/media"
-public_folder: "/media"
+site_url: https://www.sfghwellness.org
+logo_url: /media/cropped-cropped-ZSFGfavicon-270x270.png
+media_folder: static/media
+public_folder: /media
 
 collections:
-  - name: "page"
-    label: "Page"
-    folder: "content"
+  - name: page
+    label: Page
+    folder: content
     create: true
-    slug: "{{slug}}"
+    slug: {{slug}}
     fields:
-      - {label: "Collection", name: "collection", widget: "hidden", default: "page"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Updated", name: "date", widget: "date"}
-      - {label: "Menu Order", name: "weight", widget: "number"}
-      - {label: "Background Image", name: "background", widget: "file", allow_multiple: false}
+      - {label: Collection, name: collection, widget: hidden, default: page}
+      - {label: Title, name: title, widget: string}
+      - {label: Updated, name: date, widget: date}
+      - {label: "Menu Order", name: weight, widget: number}
+      - label: Background Image
+        name: background
+        widget: image
+        allow_multiple: false
 
-      - {label: "Sidebar Images", name: "images", widget: file, media_library: {config: {multiple: true}}}
+      - label: Sidebar Images
+        name: images
+        widget: image
+        media_library: {config: {multiple: true}}
 
-      - label: "Sidebar Events"
-        name: "sidebarEvents"
-        widget: "object"
+      - label: Sidebar Events
+        name: sidebarEvents
+        widget: object
         fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Description", name: "description", widget: "text"}
-          - label: "Sections"
-            name: "sections"
-            widget: "object"
-            allow_multiple: true
+          - {label: Title, name: title, widget: string}
+          - {label: Description, name: description, widget: text}
+          - label: Sections
+            name: sections
+            widget: list
             fields:
-              - {label: "Subtitle", name: "title", widget: "string"}
-              - {label: "description", name: "description", widget: "text"}
+              - {label: Subtitle, name: title, widget: string}
+              - {label: description, name: description, widget: text}
 
-      - label: "Page Events"
-        name: "pageEvents"
-        widget: "object"
+      - label: Page Events
+        name: pageEvents
+        widget: object
         fields: 
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Description", name: "description", widget: "text"}
-          - label: "Sections"
-            name: "sections"
-            widget: "object"
-            allow_multiple: true
+          - {label: Title, name: title, widget: string}
+          - {label: Description, name: description, widget: text}
+          - label: Sections
+            name: sections
+            widget: object
             fields:
-              - {label: "Subtitle", name: "title", widget: "string"}
-              - {label: "Description", name: "description", widget: "text"}
-              - label: "subsections"
-                name: "subsections"
-                widget: "object"
-                allow_multiple: true
+              - {label: Subtitle, name: title, widget: string}
+              - {label: Description, name: description, widget: text}
+              - label: subsections
+                name: subsections
+                widget: list
                 fields:
-                  - {label: "Title", name: "title", widget: "string"}
-                  - {label: "Description", name: "description", widget: "text"}
+                  - {label: Title, name: title, widget: string}
+                  - {label: Description, name: description, widget: text}
 
-      - {label: "Document Body", name: "body", widget: "markdown"}
+      - {label: Document Body, name: body, widget: markdown}
