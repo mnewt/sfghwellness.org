@@ -106,7 +106,7 @@ const Footer = () => (
 
                 <img
                   alt="SF Health Network"
-                  src="/sfhn-brand-logo-heart-only-white-sized.png"
+                  src="/images/sfhn-brand-logo-heart-only-white-sized.png"
                 />
               </div>
               <div className="footer__end">
@@ -124,7 +124,12 @@ const Footer = () => (
       <div className="small-12 columns">
         <div id="brand" className="row text-center expanded">
           <div className="small-12 columns">
-            <img className="brand-logo" src="/brand-logo.png" alt="" title="" />
+            <img
+              className="brand-logo"
+              src="/images/brand-logo.png"
+              alt=""
+              title=""
+            />
             <p>
               © Copyright 1998 - 2018, Department of Public Health, City and
               County of San Francisco

@@ -61,7 +61,7 @@ Hero.propTypes = {
 };
 
 Hero.defaultProps = {
-  image: '/GardenMural_Header-1920x710.jpg',
+  image: '/images/GardenMural_Header-1920x710.jpg',
 };
 
 export default Hero;

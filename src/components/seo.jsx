@@ -76,6 +76,7 @@ const SEO = ({ description, lang, meta, keywords, title }) => {
         href="https://zuckerbergsanfranciscogeneral.org/patient-visitor-resources/community-wellness-center/"
       />
       <link rel="prefetch" href="https://zuckerbergsanfranciscogeneral.org/" />{' '}
+      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
     </Helmet>
   );
 };

@@ -1,0 +1,52 @@
+backend:
+  name: git-gateway
+  branch: master
+media_folder: "static/uploads"
+public_folder: "/uploads"
+collections:
+  - name: "page"
+    label: "Page"
+    folder: "content/pages"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Date", name: "date", widget: "hidden", default: "page"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Update Date", name: "date", widget: "datetime"}
+      - {label: "Menu Precedence", name: "weight", widget: "number"}
+      - {label: "Background Image", name: "background", widget: "file" allow_multiple: false}
+      - {label: "Sidebar Images", name: "images", widget: file, media_library: {config: {multiple: true}}}
+      - label: "Sidebar Events"
+        name: "sidebarEvents"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+          - label: "Sections"
+            name: "sections"
+            widget: "object"
+            allow_multiple: true
+            fields:
+              - {label: "Subtitle", name: "title", widget: "string"}
+              - {label: "description", name: "description", widget: "text"}
+      - label: "Page Events"
+        name: "pageEvents"
+        widget: "object"
+        - fields: 
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+          - label: "Sections"
+            name: "sections"
+            widget: "object"
+            allow_multiple: true
+            fields:
+              - {label: "Subtitle", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - label: "subsections"
+                name: "subsections"
+                widget: "object"
+                allow_multiple: true
+                fields:
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Description", name: "description", widget: "text"}
+      - {label: "Document Body", name: "body", widget: "markdown"}

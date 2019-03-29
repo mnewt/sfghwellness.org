@@ -43,7 +43,7 @@ const Header = ({ location, title }) => {
           <div className="row align-middle">
             <div className="title-bar-title">
               <Link to="/">
-                <img src="/logo-zsfg.png" alt={pageTitle} />
+                <img src="/images/logo-zsfg.png" alt={pageTitle} />
                 {/* <Img fluid={logo.childImageSharp.fluid} alt={pageTitle} /> */}
               </Link>
             </div>
