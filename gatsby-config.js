@@ -83,5 +83,6 @@ families, and all San Franciscans.`,
         logo: `./src/images/cropped-cropped-ZSFGfavicon-270x270.png`,
       },
     },
+    `gatsby-plugin-netlify-cms`,
   ],
 };

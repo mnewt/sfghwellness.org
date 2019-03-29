@@ -15,6 +15,7 @@
     "gatsby-plugin-fathom": "^1.0.4",
     "gatsby-plugin-favicon": "^3.1.5",
     "gatsby-plugin-manifest": "^2.0.25",
+    "gatsby-plugin-netlify-cms": "^3.0.17",
     "gatsby-plugin-offline": "^2.0.25",
     "gatsby-plugin-postcss": "^2.0.7",
     "gatsby-plugin-react-helmet": "^3.0.11",

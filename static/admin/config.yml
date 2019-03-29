@@ -1,8 +1,10 @@
 backend:
   name: git-gateway
   branch: master
+
 media_folder: "static/uploads"
 public_folder: "/uploads"
+
 collections:
   - name: "page"
     label: "Page"
@@ -15,7 +17,9 @@ collections:
       - {label: "Update Date", name: "date", widget: "datetime"}
       - {label: "Menu Precedence", name: "weight", widget: "number"}
       - {label: "Background Image", name: "background", widget: "file", allow_multiple: false}
+
       - {label: "Sidebar Images", name: "images", widget: file, media_library: {config: {multiple: true}}}
+
       - label: "Sidebar Events"
         name: "sidebarEvents"
         widget: "object"
@@ -29,6 +33,7 @@ collections:
             fields:
               - {label: "Subtitle", name: "title", widget: "string"}
               - {label: "description", name: "description", widget: "text"}
+
       - label: "Page Events"
         name: "pageEvents"
         widget: "object"
@@ -49,4 +54,5 @@ collections:
                 fields:
                   - {label: "Title", name: "title", widget: "string"}
                   - {label: "Description", name: "description", widget: "text"}
+
       - {label: "Document Body", name: "body", widget: "markdown"}
