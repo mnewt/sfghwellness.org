@@ -44,8 +44,8 @@ exports.createPages = ({ graphql, actions }) => {
   });
 };
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions;
+exports.onCreateNode = ({ node, loadNodeContent, actions, getNode }) => {
+  const { createNode, createNodeField } = actions;
 
   if (node.internal.type === 'MarkdownRemark') {
     const value = createFilePath({ node, getNode });
@@ -54,6 +54,21 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       node,
       value,
     });
+  } else if (node.internal.type === 'text/html') {
+    const nodeContent = loadNodeContent(node);
+    // set up the new node
+    const htmlNodeContent = {
+      // read the raw html content
+      content: loadNodeContent(node),
+      // take the file's name as identifier
+      name: node.name,
+      internal: {
+        type: 'HTMLContent',
+      },
+      value: createFilePath({ node, getNode }),
+    };
+
+    createNode(htmlNodeContent);
   }
 };
 
