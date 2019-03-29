@@ -61,7 +61,7 @@ const Layout = ({
 
   return (
     <div className="off-canvas-wrapper">
-      <MobileMenu />
+      <MobileMenu location={location} />
       <Header location={location} siteUrl={siteUrl} title={title} />
       <Hero pageTitle={pageTitle} />
       <section className="module__main">

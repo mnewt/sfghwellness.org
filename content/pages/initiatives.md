@@ -4,8 +4,6 @@ title: Initiatives & Programs
 weight: 3
 ---
 
-## Initiatives & Programs
-
 The Community Wellness Program works to fulfill its mission by focusing on four core initiatives.
 
 ### Healing Moves, Active Living
@@ -35,7 +33,7 @@ Lunch Food Truck Program
 Food trucks are bringing their flavorful fare to ZSFG  Monday-Friday from 11:30am-2:30 pm! A different truck serves food in the 23rd St parking lot near Hearty Cafe. Take advantage of this tasty delight!
 
 ZSFG Healthy Beverage Initiative
-In alignment with ZSFG’s strategic plan to enhance wellness, the Healthy Beverage Initiative formalizes our commitment towards creating a healthy environment that promotes healthy lifestyles for patients, staff, visitors and the community at large. In June 2015, ZSFG launched this initiative to replace sugar sweetened beverages (SSBs) with healthier options across the campus.  See FAQs here: ZSFG Healthy Beverage Initiative FAQ handout – 9-15-15
+In alignment with ZSFG’s strategic plan to enhance wellness, the Healthy Beverage Initiative formalizes our commitment towards creating a healthy environment that promotes healthy lifestyles for patients, staff, visitors and the community at large. In June 2015, ZSFG launched this initiative to replace sugar sweetened beverages (SSBs) with healthier options across the campus.  See FAQs here: [ZSFG Healthy Beverage Initiative FAQ handout – 9-15-15](/uploads/SFGH-Healthy-Beverage-Initiative-FAQ-handout-9-15-15.pdf "ZSFG Healthy Beverage Initiative FAQ handout – 9-15-15")
 
 ### Community Engagement
 The Community Engagement Initiative addresses our commitment to working collaboratively with related community programs and organizations to promote, cross-refer, and help ensure that programs and services are available and accessible to all San Franciscans, particularly for those who face challenges related to language, literacy, and/or economic status.
@@ -57,4 +55,4 @@ Tobacco Cessation Classes
 
 We offer group cessation daytime and evening classes on campus. To view upcoming classes, please visit our calendar. For additional resources, please visit the [California Smoker’s Helpline website](http://www.nobutts.org/ "California Smoker’s Helpline website"), the [San Francisco Tobacco Free Project](http://sanfranciscotobaccofreeproject.org/ "San Francisco Tobacco Free Project") and the Centers For Disease Control and Prevention’s [Quitting Smoking Resource](http://www.cdc.gov/tobacco/data_statistics/fact_sheets/cessation/quitting/index.htm "Quitting Smoking Resource").
 
-Providers may refer a patient on e-Referral or by calling [(415)206-6074](tel:+14152066074 "(415)206-6074").
+Providers may refer a patient on e-Referral or by calling [415 206 6074](tel:+14152066074 "415 206 6074").

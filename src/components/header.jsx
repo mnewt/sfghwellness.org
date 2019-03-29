@@ -17,7 +17,6 @@ const Header = ({ location, title }) => {
         ) {
           edges {
             node {
-              id
               fields {
                 slug
               }

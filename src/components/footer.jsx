@@ -21,9 +21,19 @@ const Footer = () => (
                       height: '300px',
                       border: '1px solid #2c2c2c',
                       margin: '20px',
+                      overflowY: 'hidden',
                     }}
                   >
-                    {/* <img src="/map.static.png" /> */}
+                    <a href="https://www.google.com/maps/place/Zuckerberg+San+Francisco+General+Hospital/@37.7556605,-122.4072486,17z/data=!3m1!4b1!4m5!3m4!1s0x808f7e4bb2d3d61b:0xc7e327c61cf31c06!8m2!3d37.7556563!4d-122.4050599?hl=en">
+                      <img
+                        src="/images/map.static.png"
+                        style={{
+                          maxWidth: '100%',
+                          display: 'block',
+                          padding: '0px',
+                        }}
+                      />
+                    </a>
                   </div>
                 </div>
                 <a

@@ -75,7 +75,11 @@ const SEO = ({ description, lang, meta, keywords, title }) => {
         rel="prefetch"
         href="https://zuckerbergsanfranciscogeneral.org/patient-visitor-resources/community-wellness-center/"
       />
-      <link rel="prefetch" href="https://zuckerbergsanfranciscogeneral.org/" />{' '}
+      <link rel="prefetch" href="https://zuckerbergsanfranciscogeneral.org/" />
+      <link
+        rel="prefetch"
+        href="https://epp.ecwcloud.com/epp7/jsp/epp/epp_login.jsp"
+      />
       <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
     </Helmet>
   );

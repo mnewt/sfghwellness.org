@@ -1,7 +1,7 @@
 ---
 title: C.A.R.E.
 images:
-  - CARE-Logo.jpg
+  - ../../src/images/CARE-Logo.jpg
 weight: 6
 sidebarEvents:
   title: Group Schedules
@@ -37,8 +37,8 @@ The C.A.R.E. program is available in English, Spanish and Chinese. The fall seri
 
 ## Fall Series 2016 Program Booklet
 
-♥ [English CARE Fall 2016](./English-CARE-Fall-2016-Booklet.pdf "English CARE Fall 2016")
+♥ [English CARE Fall 2016](/static/uploads/English-CARE-Fall-2016-Booklet.pdf "English CARE Fall 2016")
 
-♥ [Chinese CARE Fall 2016](./Chinese-CARE-Fall-2016-Booklet.pdf "Chinese CARE Fall 2016")
+♥ [Chinese CARE Fall 2016](/static/uploads/Chinese-CARE-Fall-2016-Booklet.pdf "Chinese CARE Fall 2016")
 
-♥ [Spanish CARE Fall 2016](./Spanish-CARE-Fall-2016-Booklet.pdf "Spanish CARE Fall 2016")
+♥ [Spanish CARE Fall 2016](/static/uploads/Spanish-CARE-Fall-2016-Booklet.pdf "Spanish CARE Fall 2016")

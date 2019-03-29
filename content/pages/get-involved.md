@@ -3,10 +3,10 @@ date: 2019-03-25
 title: Get Involved
 weight: 2
 images:
-  - ./1.jpg
-  - ./2.jpg
-  - ./3.jpg
-  - ./4.jpg
+  - ../../src/images/get-involved1.jpg
+  - ../../src/images/get-involved2.jpg
+  - ../../src/images/get-involved3.jpg
+  - ../../src/images/get-involved4.jpg
 pageEvents:
   title: Application Deadlines
   description: We recruit Wellness Navigators three times a year. Please see the deadlines below to plan accordingly.
