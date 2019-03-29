@@ -14,7 +14,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Update Date", name: "date", widget: "datetime"}
       - {label: "Menu Precedence", name: "weight", widget: "number"}
-      - {label: "Background Image", name: "background", widget: "file" allow_multiple: false}
+      - {label: "Background Image", name: "background", widget: "file", allow_multiple: false}
       - {label: "Sidebar Images", name: "images", widget: file, media_library: {config: {multiple: true}}}
       - label: "Sidebar Events"
         name: "sidebarEvents"
@@ -32,7 +32,7 @@ collections:
       - label: "Page Events"
         name: "pageEvents"
         widget: "object"
-        - fields: 
+        fields: 
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Description", name: "description", widget: "text"}
           - label: "Sections"
