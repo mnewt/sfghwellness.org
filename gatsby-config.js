@@ -32,12 +32,14 @@ families, and all San Franciscans.`,
       },
     },
     `gatsby-transformer-yaml`,
+    `gatsby-plugin-netlify-cms-paths`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          `gatsby-plugin-netlify-cms-paths`,
           {
             resolve: `gatsby-remark-images`,
             options: {

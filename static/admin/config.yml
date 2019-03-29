@@ -49,7 +49,7 @@ collections:
           - {label: Description, name: description, widget: text}
           - label: Sections
             name: sections
-            widget: object
+            widget: list
             fields:
               - {label: Subtitle, name: title, widget: string}
               - {label: Description, name: description, widget: text}
