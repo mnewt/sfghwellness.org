@@ -12,7 +12,7 @@ collections:
     label: Page
     folder: content
     create: true
-    slug: {{slug}}
+    slug: "{{slug}}"
     fields:
       - {label: Collection, name: collection, widget: hidden, default: page}
       - {label: Title, name: title, widget: string}
